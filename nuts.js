@@ -5,7 +5,7 @@
      * super-simple templating
      */
 
-    function templatize(template, context) {
+    function NUTS(template, context) {
         return template.replace(/\[:(\w+)\]/g, function(match, key) {
             if (context[key] instanceof Function) {
                 return context[key]();
@@ -17,11 +17,11 @@
 
 
     if (typeof module !== 'undefined') {
-        module.exports = templatize;
+        module.exports = NUTS;
     }
 
     if (typeof window !== 'undefined') {
-        window.nuts = templatize;
+        window.nuts = NUTS;
     }
 })();
 

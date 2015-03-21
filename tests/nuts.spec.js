@@ -1,4 +1,4 @@
-var templatize = require('../nuts'),
+var NUTS = require('../nuts'),
     assert = require('assert');
 
 describe('templatize()', function() {
@@ -15,7 +15,7 @@ describe('templatize()', function() {
                 }
             },
             template = '[:foo] [:bar][:punctuation]',
-                s = templatize(template, object);
+                s = NUTS(template, object);
 
         assert.equal(s, 'hello world!');
 
