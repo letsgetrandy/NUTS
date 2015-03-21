@@ -1,0 +1,29 @@
+{
+  "name": "NUTS",
+  "version": "1.0.0",
+  "description": "Nearly Useless Template System",
+  "main": "nuts.js",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^2.2.1"
+  },
+  "scripts": {
+    "test": "mocha tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/letsgetrandy/NUTS.git"
+  },
+  "keywords": [
+    "javascript",
+    "template",
+    "templating",
+    "nuts"
+  ],
+  "author": "Randy Hunt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/letsgetrandy/NUTS/issues"
+  },
+  "homepage": "https://github.com/letsgetrandy/NUTS"
+}
