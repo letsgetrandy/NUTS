@@ -13,18 +13,31 @@ NUTS is simple to use.
 
 First, create a template:
 
-```
+```js
 var template = '<div>[:text]</div>';
 ```
 
 Then, render it, by passing an object of values:
 
-```
+```js
 var obj = {
     text: "Hello world!"
 };
 var html = nuts(template, obj);
 ```
 
+Your context object can also contain functions...
+
+```js
+var userTemplate = '<div>Full name is: [:name]</div>',
+    userModel = {
+        "firstName": "Fred",
+        "lastName": "Flintstone",
+        "name": function() {
+            return this.firstName + ' ' + this.lastName;
+        }
+    },
+    html = nuts(userTemplate, userModel);;
+```
 
 That's it!

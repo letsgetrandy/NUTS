@@ -15,14 +15,16 @@
         });
     }
 
-
-    if (typeof module !== 'undefined') {
-        module.exports = NUTS;
-    }
-
-    if (typeof window !== 'undefined') {
-        window.nuts = NUTS;
-    }
+    (function() {
+        if (typeof define === 'function' && typeof define.amd === 'object') {
+            define(function() {
+                return NUTS;
+            });
+        } else if (typeof module !== 'undefined' && module.exports) {
+            module.exports = NUTS;
+        } else if (typeof window !== 'undefined') {
+            window.Bro = NUTS;
+        }
+    })();
 })();
-
 
