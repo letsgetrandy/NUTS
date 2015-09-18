@@ -23,7 +23,7 @@
         } else if (typeof module !== 'undefined' && module.exports) {
             module.exports = NUTS;
         } else if (typeof window !== 'undefined') {
-            window.Bro = NUTS;
+            window.NUTS = NUTS;
         }
     })();
 })();
