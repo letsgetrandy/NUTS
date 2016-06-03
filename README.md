@@ -8,6 +8,9 @@ Nearly Useless Template System
 
 NUTS is a _nearly useless_ templating system for Javascript.
 
+## Why use it?
+Having functionality in your template system creates more possible points of failure, making it harder to test and harder to find bugs when they exist. It's better if your functionality is inserted and removed from some other, testable member, while your templates hang around behind the scene just spitting out the end result.
+
 ## How to use it
 NUTS is simple to use.
 
